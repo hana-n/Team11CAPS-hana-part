@@ -28,6 +28,8 @@
 			<th><s:message code="label.lecturer.dateJoined" /></th>
 			<th><s:message code="label.lecturer.email" /></th>
 			<th><s:message code="label.lecturer.status" /></th>
+			<th></th>
+			<th></th>
 		</tr>
 		<c:forEach var="user" items="${lecturerList}" varStatus="status">
 			<tr>

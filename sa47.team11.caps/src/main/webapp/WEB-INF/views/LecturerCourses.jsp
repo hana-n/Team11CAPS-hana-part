@@ -26,6 +26,7 @@
 			<th><s:message code="label.course.startTime" /></th>
 			<th><s:message code="label.course.endTime" /></th>
 			<th><s:message code="label.course.examTime" /></th>
+			<th></th>
 		</tr>
 		<c:forEach var="course" items="${lCourseList}" varStatus="status">
 			<tr>
