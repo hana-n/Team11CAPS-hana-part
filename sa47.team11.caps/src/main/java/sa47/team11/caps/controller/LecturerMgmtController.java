@@ -97,8 +97,11 @@ public class LecturerMgmtController {
 		Integer userid = lecturerMgmtService.getLecturerID(courseid);
 		lecturerMgmtService.removeAssignedLecturer(courseid);
 		ArrayList<Course> lCourseList = lecturerMgmtService.findLecturerCourses(userid);
+		User lecturer = lecturerMgmtService.findLecturerById(userid);
 		ModelAndView mav = new ModelAndView("LecturerCourses");
 		mav.addObject("lCourseList", lCourseList);
+		mav.addObject("lecturer", lecturer);
+		
 		return mav;
 	}
 

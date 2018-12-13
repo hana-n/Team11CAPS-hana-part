@@ -25,7 +25,7 @@
 		<form:input path="email" required="required" pattern="[a-z0-9._%+-]{3,}@[a-z]{3,}([.]{1}[a-z]{2,}|[.]{1}[a-z]{2,}[.]{1}[a-z]{2,})" class="form-control" maxlength="40" placeholder="Email"/>
 		<div>
 		<label> <s:message code="label.lecturer.password" /></label>
-		<form:input path="password" required="required" oninput="this.setCustomValidity('')" oninvalid="this.setCustomValidity('Please Enter Password')" class="form-control" maxlength="40" placeholder="Password"/>
+		<form:input path="password" type="password" required="required" oninput="this.setCustomValidity('')" oninvalid="this.setCustomValidity('Please Enter Password')" class="form-control" maxlength="40" placeholder="Password"/>
 		</div> 
 		<div>
 		<label> <s:message code="label.lecturer.status" /></label>
